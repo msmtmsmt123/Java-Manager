@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<Button
+		android:id="@+id/btnChooseJavaFile"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Choose Java File" />
+
+	<TextView
+		android:id="@+id/txtJavaPath"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/btnChooseJavaFile"
+		android:text="Not Selected"
+		android:gravity="center_horizontal"
+		android:textSize="20sp"/>
+	
+	<Button
+		android:id="@+id/btnChooseClassPathFile"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/txtJavaPath"
+		android:text="Choose ClassPath File" />
+	
+	<Button
+		android:id="@+id/btnResetClassPathFile"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/btnChooseClassPathFile"
+		android:text="Use Default" />
+	
+	<TextView
+		android:id="@+id/txtClassPath"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/btnResetClassPathFile"
+		android:text="Default"
+		android:gravity="center_horizontal"
+		android:textSize="20sp"/>
+	
+	<com.fsn.cauly.CaulyAdView
+		android:id="@+id/ad"
+		xmlns:app="http://schemas.android.com/apk/res/com.java.emulator"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		app:appcode="yXjRPs5M"
+		app:effect="FadeIn"
+		app:bannerHeight="Proportional" />
+	
+	<Button
+		android:id="@+id/btnCompile"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Compile"
+		android:layout_above="@id/ad"/>
+	
+</RelativeLayout>

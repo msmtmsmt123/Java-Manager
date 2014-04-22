@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<EditText
+		android:id="@+id/outputArea"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFFFF"
+		android:gravity="top"/>
+	
+	<com.fsn.cauly.CaulyAdView
+		android:id="@+id/ad"
+		xmlns:app="http://schemas.android.com/apk/res/com.java.emulator"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		app:appcode="yXjRPs5M"
+		app:effect="FadeIn"
+		app:bannerHeight="Proportional" />
+	
+</RelativeLayout>

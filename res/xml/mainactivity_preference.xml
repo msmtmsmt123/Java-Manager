@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Run">
+        <Preference android:title="Run Java File" android:summary="Run .java file." android:key="runjava"/>
+        <Preference android:title="Run Class File" android:summary="Run .class file which was compiled." android:key="runclass"/>
+        <Preference android:title="Run Jar File" android:summary="Run .jar file which was archived." android:key="runjar"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Compile">
+        <Preference android:summary="Compile .java file to .class file." android:title="Compile Java File" android:key="compilejava"/>
+        <!-- <Preference android:summary="Archive .jar file with .java file." android:title="Archive Jar File" android:key="archivejar"/> -->
+    </PreferenceCategory>
+    <PreferenceCategory android:title="About">
+        <Preference android:summary="About this program and developer." android:title="About" android:key="about"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
