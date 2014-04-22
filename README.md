@@ -2,18 +2,18 @@ Java-Emulator
 =============
 
 <font size="6">Java Emulator</font>
-  <br /><br />
-	<font size="3">
-	  This Java Emulator can helps to run Java Program in Android.
-	  <br />
-	  <br />
-	  <font size="4"><b>Functions</b></font>
-	  <ul>
-	    <li>Run Java File</li>
-		<li>Run Class (Compiled Java) File</li>
-		<li>Run Jar (Archived Java) File</li>
-		<li>Compile Java to Class</li>
-		<li>Archive Java to Jar</li>
+<br /><br />
+<font size="3">
+This Java Emulator can helps to run Java Program in Android.
+<br />
+<br />
+<font size="4"><b>Functions</b></font>
+<ul>
+<li>Run Java File</li>
+<li>Run Class (Compiled Java) File</li>
+<li>Run Jar (Archived Java) File</li>
+<li>Compile Java to Class</li>
+<li>Archive Java to Jar</li>
 	  </ul>
 	  <br />
 	  <font size="4"><b>Developer</b></font>
@@ -31,6 +31,6 @@ Java-Emulator
 	  </ul>
 	  <br />
 	  Play Store : https://play.google.com/store/apps/details?id=com.java.emulator
-	  
+	  <br />
 	  Copyright ⓒ 2014 affjljoo3581@gmail.com, ParkJungWoo
-    </font>
+    
