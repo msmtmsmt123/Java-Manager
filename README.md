@@ -1,36 +1,32 @@
-Java-Emulator
-=============
-
-<font size="6">Java Emulator</font>
-<br /><br />
-<font size="3">
-	This Java Emulator can helps to run Java Program in Android.
-	<br />
-	<br />
-	<font size="4"><b>Functions</b></font>
-	<ul>
-		<li>Run Java File</li>
-		<li>Run Class (Compiled Java) File</li>
-		<li>Run Jar (Archived Java) File</li>
-		<li>Compile Java to Class</li>
-		<li>Archive Java to Jar</li>
-	</ul>
-	<br />
-	<font size="4"><b>Developer</b></font>
-	<ul>
-		<li>Name : ParkJungWoo</li>
-		<li>Email Address : affjljoo3581@gmail.com</li>
-	</ul>
-	<br />
-	<font size="4"><b>Third-Party Softwares</b></font>
-	<ul>
-		<li>aFileChooser - Paul Burke</li>
-		<li>dex-tools - Google Android</li>
-		<li>dx - Google Android</li>
-		<li>Commons - apache</li>
-	</ul>
-	<br />
-	Play Store : https://play.google.com/store/apps/details?id=com.java.emulator
-	<br />
-	Copyright ⓒ 2014 affjljoo3581@gmail.com, ParkJungWoo
-</font>
+	    <font size="6">Java Manager</font>
+	    <br /><br />
+	    <font size="3">
+	        This Java Manager can helps to manage Java Program in Android.
+	        <br />
+		    <br />
+	        <font size="4"><b>Functions</b></font>
+	        <ul>
+		        <li>Run Java File</li>
+		        <li>Run Class (Compiled Java) File</li>
+		        <li>Run Jar (Archived Java) File</li>
+				<li>Compile Java to Class</li>
+				<li>Archive Java to Jar</li>
+	        </ul>
+			<br />
+			<font size="4"><b>Developer</b></font>
+			<ul>
+			    <li>Name : ParkJungWoo</li>
+			    <li>Email Address : affjljoo3581@gmail.com</li>
+			</ul>
+			<br />
+			<font size="4"><b>Third-Party Softwares</b></font>
+			<ul>
+			    <li>aFileChooser - Paul Burke</li>
+				<li>dex-tools - Google Android</li>
+				<li>dx - Google Android</li>
+				<li>Commons - apache</li>
+			</ul>
+			<br />
+			
+			Copyright ⓒ 2014 affjljoo3581@gmail.com, ParkJungWoo
+        </font>

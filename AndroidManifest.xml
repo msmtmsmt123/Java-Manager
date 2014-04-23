@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.java.emulator"
+    package="com.java.manager"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -20,7 +20,7 @@
         android:theme="@style/AppTheme"
 		android:debuggable="false">
         <activity
-            android:name="com.java.emulator.MainActivity"
+            android:name="com.java.manager.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,10 +28,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.java.emulator.RunActivity"></activity>
-        <activity android:name="com.java.emulator.CompileJavaActivity"></activity>
-        <activity android:name="com.java.emulator.ArchiveJarActivity"></activity>
-		<activity android:name="com.java.emulator.AboutActivity"></activity>
+        <activity android:name="com.java.manager.RunActivity"></activity>
+        <activity android:name="com.java.manager.CompileJavaActivity"></activity>
+        <activity android:name="com.java.manager.ArchiveJarActivity"></activity>
+		<activity android:name="com.java.manager.AboutActivity"></activity>
 		<activity
 		    android:name="com.ipaulpro.afilechooser.FileChooserActivity"
 		    android:icon="@drawable/ic_launcher"></activity>

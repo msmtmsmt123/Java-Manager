@@ -169,14 +169,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #com_fsn_cauly_CaulyAdView_allowcall com.java.emulator:allowcall}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_fsn_cauly_CaulyAdView_appcode com.java.emulator:appcode}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_fsn_cauly_CaulyAdView_bannerHeight com.java.emulator:bannerHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_fsn_cauly_CaulyAdView_dynamicReloadInterval com.java.emulator:dynamicReloadInterval}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_fsn_cauly_CaulyAdView_effect com.java.emulator:effect}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_fsn_cauly_CaulyAdView_gps com.java.emulator:gps}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_fsn_cauly_CaulyAdView_reloadInterval com.java.emulator:reloadInterval}</code></td><td></td></tr>
-           <tr><td><code>{@link #com_fsn_cauly_CaulyAdView_threadPriority com.java.emulator:threadPriority}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_fsn_cauly_CaulyAdView_allowcall com.java.manager:allowcall}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_fsn_cauly_CaulyAdView_appcode com.java.manager:appcode}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_fsn_cauly_CaulyAdView_bannerHeight com.java.manager:bannerHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_fsn_cauly_CaulyAdView_dynamicReloadInterval com.java.manager:dynamicReloadInterval}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_fsn_cauly_CaulyAdView_effect com.java.manager:effect}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_fsn_cauly_CaulyAdView_gps com.java.manager:gps}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_fsn_cauly_CaulyAdView_reloadInterval com.java.manager:reloadInterval}</code></td><td></td></tr>
+           <tr><td><code>{@link #com_fsn_cauly_CaulyAdView_threadPriority com.java.manager:threadPriority}</code></td><td></td></tr>
            </table>
            @see #com_fsn_cauly_CaulyAdView_allowcall
            @see #com_fsn_cauly_CaulyAdView_appcode
@@ -192,7 +192,7 @@ containing a value of this type.
             0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007
         };
         /**
-          <p>This symbol is the offset where the {@link com.java.emulator.R.attr#allowcall}
+          <p>This symbol is the offset where the {@link com.java.manager.R.attr#allowcall}
           attribute's value can be found in the {@link #com_fsn_cauly_CaulyAdView} array.
 
 
@@ -202,11 +202,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.java.emulator:allowcall
+          @attr name com.java.manager:allowcall
         */
         public static final int com_fsn_cauly_CaulyAdView_allowcall = 3;
         /**
-          <p>This symbol is the offset where the {@link com.java.emulator.R.attr#appcode}
+          <p>This symbol is the offset where the {@link com.java.manager.R.attr#appcode}
           attribute's value can be found in the {@link #com_fsn_cauly_CaulyAdView} array.
 
 
@@ -216,11 +216,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.java.emulator:appcode
+          @attr name com.java.manager:appcode
         */
         public static final int com_fsn_cauly_CaulyAdView_appcode = 0;
         /**
-          <p>This symbol is the offset where the {@link com.java.emulator.R.attr#bannerHeight}
+          <p>This symbol is the offset where the {@link com.java.manager.R.attr#bannerHeight}
           attribute's value can be found in the {@link #com_fsn_cauly_CaulyAdView} array.
 
 
@@ -230,11 +230,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.java.emulator:bannerHeight
+          @attr name com.java.manager:bannerHeight
         */
         public static final int com_fsn_cauly_CaulyAdView_bannerHeight = 7;
         /**
-          <p>This symbol is the offset where the {@link com.java.emulator.R.attr#dynamicReloadInterval}
+          <p>This symbol is the offset where the {@link com.java.manager.R.attr#dynamicReloadInterval}
           attribute's value can be found in the {@link #com_fsn_cauly_CaulyAdView} array.
 
 
@@ -244,11 +244,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.java.emulator:dynamicReloadInterval
+          @attr name com.java.manager:dynamicReloadInterval
         */
         public static final int com_fsn_cauly_CaulyAdView_dynamicReloadInterval = 4;
         /**
-          <p>This symbol is the offset where the {@link com.java.emulator.R.attr#effect}
+          <p>This symbol is the offset where the {@link com.java.manager.R.attr#effect}
           attribute's value can be found in the {@link #com_fsn_cauly_CaulyAdView} array.
 
 
@@ -258,11 +258,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.java.emulator:effect
+          @attr name com.java.manager:effect
         */
         public static final int com_fsn_cauly_CaulyAdView_effect = 1;
         /**
-          <p>This symbol is the offset where the {@link com.java.emulator.R.attr#gps}
+          <p>This symbol is the offset where the {@link com.java.manager.R.attr#gps}
           attribute's value can be found in the {@link #com_fsn_cauly_CaulyAdView} array.
 
 
@@ -272,11 +272,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.java.emulator:gps
+          @attr name com.java.manager:gps
         */
         public static final int com_fsn_cauly_CaulyAdView_gps = 2;
         /**
-          <p>This symbol is the offset where the {@link com.java.emulator.R.attr#reloadInterval}
+          <p>This symbol is the offset where the {@link com.java.manager.R.attr#reloadInterval}
           attribute's value can be found in the {@link #com_fsn_cauly_CaulyAdView} array.
 
 
@@ -286,11 +286,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.java.emulator:reloadInterval
+          @attr name com.java.manager:reloadInterval
         */
         public static final int com_fsn_cauly_CaulyAdView_reloadInterval = 5;
         /**
-          <p>This symbol is the offset where the {@link com.java.emulator.R.attr#threadPriority}
+          <p>This symbol is the offset where the {@link com.java.manager.R.attr#threadPriority}
           attribute's value can be found in the {@link #com_fsn_cauly_CaulyAdView} array.
 
 
@@ -300,7 +300,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.java.emulator:threadPriority
+          @attr name com.java.manager:threadPriority
         */
         public static final int com_fsn_cauly_CaulyAdView_threadPriority = 6;
     };

@@ -9,6 +9,9 @@
         <Preference android:summary="Compile .java file to .class file." android:title="Compile Java File" android:key="compilejava"/>
         <!-- <Preference android:summary="Archive .jar file with .java file." android:title="Archive Jar File" android:key="archivejar"/> -->
     </PreferenceCategory>
+	<PreferenceCategory android:title="Decompile">
+		<Preference android:summary="Decompile .class file to .java file." android:title="Decompile Class File" android:key="decompileclass"/>
+	</PreferenceCategory>
     <PreferenceCategory android:title="About">
         <Preference android:summary="About this program and developer." android:title="About" android:key="about"/>
     </PreferenceCategory>

@@ -43,7 +43,7 @@
 	
 	<com.fsn.cauly.CaulyAdView
 		android:id="@+id/ad"
-		xmlns:app="http://schemas.android.com/apk/res/com.java.emulator"
+		xmlns:app="http://schemas.android.com/apk/res/com.java.manager"
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
 		android:layout_alignParentBottom="true"
@@ -55,6 +55,7 @@
 		android:id="@+id/btnCompile"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:layout_marginBottom="20dp"
 		android:text="Compile"
 		android:layout_above="@id/ad"/>
 	
