@@ -55,8 +55,8 @@
 		android:id="@+id/btnCompile"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_marginBottom="20dp"
+		android:layout_marginBottom="150dp"
 		android:text="Compile"
-		android:layout_above="@id/ad"/>
+		android:layout_alignParentBottom="true"/>
 	
 </RelativeLayout>
