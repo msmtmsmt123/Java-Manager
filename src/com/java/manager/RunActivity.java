@@ -4,12 +4,14 @@ import android.app.*;
 import android.content.*;
 import android.os.*;
 import android.text.*;
-import android.util.*;
+import android.view.*;
 import android.widget.*;
 import dalvik.system.*;
 import java.io.*;
 import java.lang.reflect.*;
-import com.sun.tools.hat.internal.parser.*;
+import net.daum.adam.publisher.*;
+import net.daum.adam.publisher.AdView.*;
+import net.daum.adam.publisher.impl.*;
 
 public class RunActivity extends Activity implements TextWatcher {
 	
@@ -39,6 +41,8 @@ public class RunActivity extends Activity implements TextWatcher {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_run);
+		
+		initAdam();
 		
 		setTitle("Run");
 		
@@ -75,6 +79,32 @@ public class RunActivity extends Activity implements TextWatcher {
 		
 		compileThread = new CompileThread(filePath, option);
 		compileThread.start();
+	}
+	
+	private void initAdam() {
+		final AdView adView = (AdView) findViewById(R.id.ad);
+
+		adView.setOnAdClickedListener(new OnAdClickedListener() {
+				@Override
+				public void OnAdClicked() {
+				}
+			});
+
+		adView.setOnAdFailedListener(new OnAdFailedListener() {
+				@Override
+				public void OnAdFailed(AdError error, String message) {
+					adView.setVisibility(View.INVISIBLE);
+				}
+			});
+
+		adView.setOnAdLoadedListener(new OnAdLoadedListener() {
+				@Override
+				public void OnAdLoaded() {
+					adView.setVisibility(View.VISIBLE);
+				}
+			});
+
+		adView.setVisibility(View.VISIBLE);
 	}
 	
 	public void onDestroy() {
@@ -269,7 +299,7 @@ public class RunActivity extends Activity implements TextWatcher {
 						if(compileError != null) {
 							throw compileError;
 						}
-
+						
 					case 1 :
 						Exception dexError = ManageJava.dexClass(filePath.substring(0, filePath.lastIndexOf(".")) + ".class", getFilesDir() + "/classes.dex");
 
@@ -333,6 +363,7 @@ public class RunActivity extends Activity implements TextWatcher {
 				e.printStackTrace();
 				h.post(new Runnable() {
 					public void run() {
+						dismissDialog(DIALOG_ID_PROGRESS);
 						reportError(e);
 					}
 				});

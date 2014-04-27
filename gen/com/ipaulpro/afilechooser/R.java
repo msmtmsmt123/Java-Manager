@@ -98,14 +98,16 @@ containing a value of this type.
         public static final int ic_provider=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0009;
+        public static final int action_settings=0x7f0a000b;
         public static final int ad=0x7f0a0006;
+        public static final int btnChooseClassFile=0x7f0a0008;
         public static final int btnChooseClassPathFile=0x7f0a0003;
         public static final int btnChooseJavaFile=0x7f0a0001;
         public static final int btnCompile=0x7f0a0007;
+        public static final int btnDecompile=0x7f0a0009;
         public static final int btnResetClassPathFile=0x7f0a0004;
         public static final int htmlViewer=0x7f0a0000;
-        public static final int outputArea=0x7f0a0008;
+        public static final int outputArea=0x7f0a000a;
         public static final int txtClassPath=0x7f0a0005;
         public static final int txtJavaPath=0x7f0a0002;
     }
@@ -113,8 +115,9 @@ containing a value of this type.
         public static final int activity_about=0x7f030000;
         public static final int activity_archivejar=0x7f030001;
         public static final int activity_compilejava=0x7f030002;
-        public static final int activity_run=0x7f030003;
-        public static final int file=0x7f030004;
+        public static final int activity_decompileclass=0x7f030003;
+        public static final int activity_run=0x7f030004;
+        public static final int file=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f090000;

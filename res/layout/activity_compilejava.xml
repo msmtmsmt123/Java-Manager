@@ -41,15 +41,15 @@
 		android:gravity="center_horizontal"
 		android:textSize="20sp"/>
 	
-	<com.fsn.cauly.CaulyAdView
+	<net.daum.adam.publisher.AdView
 		android:id="@+id/ad"
-		xmlns:app="http://schemas.android.com/apk/res/com.java.manager"
-		android:layout_width="fill_parent"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:layout_alignParentBottom="true"
-		app:appcode="yXjRPs5M"
-		app:effect="FadeIn"
-		app:bannerHeight="Proportional" />
+		android:background="#00000000"
+		clientId="8f72Z2PT14593f75d2b"
+		requestInterval="60"
+		android:visibility="visible"
+		android:layout_alignParentBottom="true"/>
 	
 	<Button
 		android:id="@+id/btnCompile"

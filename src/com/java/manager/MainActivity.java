@@ -11,7 +11,7 @@ import com.ipaulpro.afilechooser.utils.*;
 import java.io.*;
 
 public class MainActivity extends PreferenceActivity implements OnPreferenceClickListener {
-	Preference pRunJava, pRunClass, pRunJar, pCompileJava, pArchiveJar, pAbout;
+	Preference pRunJava, pRunClass, pRunJar, pCompileJava, pDecompileClass, pArchiveJar, pAbout;
 	String nowKey = "";
 	
 	private static final int REQUEST_CHOOSER = 0;
@@ -38,6 +38,8 @@ public class MainActivity extends PreferenceActivity implements OnPreferenceClic
 	    pCompileJava = (Preference) findPreference("compilejava");
 		//pArchiveJar = (Preference) findPreference("archivejar");
 		
+		pDecompileClass = (Preference) findPreference("decompileclass");
+		
 		pAbout = (Preference) findPreference("about");
 		
 		
@@ -47,6 +49,8 @@ public class MainActivity extends PreferenceActivity implements OnPreferenceClic
 		
 		pCompileJava.setOnPreferenceClickListener(this);
 		//pArchiveJar.setOnPreferenceClickListener(this);
+		
+		pDecompileClass.setOnPreferenceClickListener(this);
 		
 		pAbout.setOnPreferenceClickListener(this);
 	}
@@ -68,6 +72,11 @@ public class MainActivity extends PreferenceActivity implements OnPreferenceClic
 			return false;
 		} else if(nowKey.equals("archivejar")) {
 			Intent intent = new Intent(this, ArchiveJarActivity.class);
+			startActivity(intent);
+
+			return false;
+		} else if(nowKey.equals("decompileclass")) {
+			Intent intent = new Intent(this, DecompileClassActivity.class);
 			startActivity(intent);
 
 			return false;

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<Button
+		android:id="@+id/btnChooseClassFile"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Choose Java File" />
+
+	<TextView
+		android:id="@+id/txtClassPath"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/btnChooseClassFile"
+		android:text="Not Selected"
+		android:gravity="center_horizontal"
+		android:textSize="20sp"/>
+	
+	<net.daum.adam.publisher.AdView
+		android:id="@+id/ad"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#00000000"
+		clientId="8f72Z2PT14593f75d2b"
+		requestInterval="60"
+		android:visibility="visible"
+		android:layout_alignParentBottom="true"/>
+	
+	<Button
+		android:id="@+id/btnDecompile"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="150dp"
+		android:text="Decompile"
+		android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

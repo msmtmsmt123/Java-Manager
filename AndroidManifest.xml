@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.java.manager"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="2"
+    android:versionName="2.0" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -12,13 +12,14 @@
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 		
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
-		android:debuggable="false">
+		android:debuggable="true">
         <activity
             android:name="com.java.manager.MainActivity"
             android:label="@string/app_name" >
@@ -28,10 +29,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.java.manager.RunActivity"></activity>
-        <activity android:name="com.java.manager.CompileJavaActivity"></activity>
+        <activity android:name="com.java.manager.RunActivity"
+			android:configChanges="orientation|screenSize"></activity>
+        <activity android:name="com.java.manager.CompileJavaActivity"
+			android:configChanges="orientation|screenSize"></activity>
         <activity android:name="com.java.manager.ArchiveJarActivity"></activity>
 		<activity android:name="com.java.manager.AboutActivity"></activity>
+		<activity android:name="com.java.manager.DecompileClassActivity"
+			android:configChanges="orientation|screenSize"></activity>
 		<activity
 		    android:name="com.ipaulpro.afilechooser.FileChooserActivity"
 		    android:icon="@drawable/ic_launcher"></activity>

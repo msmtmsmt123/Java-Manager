@@ -10,6 +10,9 @@ import android.widget.*;
 import com.ipaulpro.afilechooser.*;
 import com.ipaulpro.afilechooser.utils.*;
 import com.sun.tools.internal.ws.processor.model.java.*;
+import net.daum.adam.publisher.*;
+import net.daum.adam.publisher.AdView.*;
+import net.daum.adam.publisher.impl.*;
 
 public class CompileJavaActivity extends Activity implements OnClickListener {
 	private static final int REQUEST_FOR_JAVA_FILE = 0;
@@ -31,6 +34,8 @@ public class CompileJavaActivity extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_compilejava);
 		
+		initAdam();
+		
 		setTitle("Compile Java");
 		
 		h = new Handler();
@@ -49,6 +54,32 @@ public class CompileJavaActivity extends Activity implements OnClickListener {
 		btnCompile.setOnClickListener(this);
 	}
 
+	private void initAdam() {
+		final AdView adView = (AdView) findViewById(R.id.ad);
+
+		adView.setOnAdClickedListener(new OnAdClickedListener() {
+				@Override
+				public void OnAdClicked() {
+				}
+			});
+
+		adView.setOnAdFailedListener(new OnAdFailedListener() {
+				@Override
+				public void OnAdFailed(AdError error, String message) {
+					adView.setVisibility(View.INVISIBLE);
+				}
+			});
+
+		adView.setOnAdLoadedListener(new OnAdLoadedListener() {
+				@Override
+				public void OnAdLoaded() {
+					adView.setVisibility(View.VISIBLE);
+				}
+			});
+
+		adView.setVisibility(View.VISIBLE);
+	}
+	
 	@Override
 	protected void onDestroy()
 	{
@@ -142,7 +173,7 @@ public class CompileJavaActivity extends Activity implements OnClickListener {
 		try {
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-			builder.setTitle("Error!");
+			builder.setTitle("Error");
 
 			builder.setMessage(pe.getMessage());
 
@@ -174,7 +205,7 @@ public class CompileJavaActivity extends Activity implements OnClickListener {
 				Exception compileError = ManageJava.compileJava(filePath, classPath);
 
 				if(compileError != null) {
-						throw compileError;
+					throw compileError;
 				}
 				
 				h.post(new Runnable() {
